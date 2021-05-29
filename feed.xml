@@ -3,12 +3,36 @@
     <title>Markkku&#x27;s blog</title>
     <link href="https://markku.raitisoja.com/feed.xml" rel="self" />
     <link href="https://markku.raitisoja.com" />
-    <updated>2021-05-29T21:18:43+03:00</updated>
+    <updated>2021-05-29T22:40:23+03:00</updated>
     <author>
         <name>Markku Raitisoja</name>
     </author>
     <id>https://markku.raitisoja.com</id>
 
+    <entry>
+        <title>Friendica</title>
+        <author>
+            <name>Markku Raitisoja</name>
+        </author>
+        <link href="https://markku.raitisoja.com/friendica/"/>
+        <id>https://markku.raitisoja.com/friendica/</id>
+            <category term="Friendica"/>
+
+        <updated>2021-05-29T22:40:23+03:00</updated>
+            <summary>
+                <![CDATA[
+                     Friendica is federated microblogging software that lives in the fediverse. Fediverse is the collection of interconnecting servers that can communicate with each other. Mostly used protocol used is ActivityPub (later AP).&nbsp; With AP users can follow other users from different servers and do mostly&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+  <p>
+    Friendica is federated microblogging software that lives in the fediverse.<br>Fediverse is the collection of interconnecting servers that can communicate with each other. Mostly used protocol used is ActivityPub (later AP).&nbsp;<br>With AP users can follow other users from different servers and do mostly common microblogging actions like commenting, resharing or liking.
+  </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>About</title>
         <author>
