@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Markkku&#x27;s blog</title>
+    <link href="https://markku.raitisoja.com/feed.xml" rel="self" />
+    <link href="https://markku.raitisoja.com" />
+    <updated>2021-05-28T09:16:41+03:00</updated>
+    <author>
+        <name>Markku Raitisoja</name>
+    </author>
+    <id>https://markku.raitisoja.com</id>
+
+    <entry>
+        <title>About</title>
+        <author>
+            <name>Markku Raitisoja</name>
+        </author>
+        <link href="https://markku.raitisoja.com/about/"/>
+        <id>https://markku.raitisoja.com/about/</id>
+
+        <updated>2021-05-28T09:16:41+03:00</updated>
+            <summary>
+                <![CDATA[
+                    I'm introverted (INFJ) person who likes to tinker different software on Linux. My main interests are in privacy and security. I have been working in IT business almost 20 years in different roles. Recently I have been working as an IT infra architect, designing and&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>I'm introverted (INFJ) person who likes to tinker different software on Linux.<br>My main interests are in privacy and security.<br>I have been working in IT business almost 20 years in different roles. <br>Recently I have been working as an IT infra architect, designing and implementing different platforms.</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Markku Raitisoja</title>
+        <author>
+            <name>Markku Raitisoja</name>
+        </author>
+        <link href="https://markku.raitisoja.com/markku-raitisoja/"/>
+        <id>https://markku.raitisoja.com/markku-raitisoja/</id>
+
+        <updated>2021-05-28T09:12:53+03:00</updated>
+            <summary>
+                <![CDATA[
+                    Welcome to my blog 
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Welcome to my blog</p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Posts</title>
+        <author>
+            <name>Markku Raitisoja</name>
+        </author>
+        <link href="https://markku.raitisoja.com/posts/"/>
+        <id>https://markku.raitisoja.com/posts/</id>
+
+        <updated>2021-05-28T08:28:28+03:00</updated>
+            <summary>
+                <![CDATA[
+                     Beginning Here is the beginning Be water my friend Bruce Lee 
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+    <h2 id="beginning">
+      Beginning
+    </h2>
+
+  <p>
+    Here is the beginning
+  </p>
+
+    <figure class="blockquote">
+      <blockquote>Be water my friend</blockquote>
+      <figcaption>Bruce Lee</figcaption>
+    </figure>
+            ]]>
+        </content>
+    </entry>
+</feed>

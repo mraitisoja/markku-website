@@ -1,0 +1,55 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Markkku&#x27;s blog",
+    "description": "",
+    "home_page_url": "https://markku.raitisoja.com",
+    "feed_url": "https://markku.raitisoja.com/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Markku Raitisoja"
+    },
+    "items": [
+        {
+            "id": "https://markku.raitisoja.com/about/",
+            "url": "https://markku.raitisoja.com/about/",
+            "title": "About",
+            "summary": "I'm introverted (INFJ) person who likes to tinker different software on Linux. My main interests are in privacy and security. I have been working in IT business almost 20 years in different roles. Recently I have been working as an IT infra architect, designing and&hellip;",
+            "content_html": "<p>I'm introverted (INFJ) person who likes to tinker different software on Linux.<br>My main interests are in privacy and security.<br>I have been working in IT business almost 20 years in different roles. <br>Recently I have been working as an IT infra architect, designing and implementing different platforms.</p>",
+            "author": {
+                "name": "Markku Raitisoja"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-05-28T09:16:41+03:00",
+            "date_modified": "2021-05-28T09:16:41+03:00"
+        },
+        {
+            "id": "https://markku.raitisoja.com/markku-raitisoja/",
+            "url": "https://markku.raitisoja.com/markku-raitisoja/",
+            "title": "Markku Raitisoja",
+            "summary": "Welcome to my blog ",
+            "content_html": "<p>Welcome to my blog</p>\n<p> </p>",
+            "author": {
+                "name": "Markku Raitisoja"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-05-28T09:12:03+03:00",
+            "date_modified": "2021-05-28T09:12:53+03:00"
+        },
+        {
+            "id": "https://markku.raitisoja.com/posts/",
+            "url": "https://markku.raitisoja.com/posts/",
+            "title": "Posts",
+            "summary": " Beginning Here is the beginning Be water my friend Bruce Lee ",
+            "content_html": "\n    <h2 id=\"beginning\">\n      Beginning\n    </h2>\n\n  <p>\n    Here is the beginning\n  </p>\n\n    <figure class=\"blockquote\">\n      <blockquote>Be water my friend</blockquote>\n      <figcaption>Bruce Lee</figcaption>\n    </figure>",
+            "author": {
+                "name": "Markku Raitisoja"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-05-28T08:28:28+03:00",
+            "date_modified": "2021-05-28T08:28:28+03:00"
+        }
+    ]
+}
