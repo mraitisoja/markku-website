@@ -3,12 +3,118 @@
     <title>Markkku&#x27;s blog</title>
     <link href="https://markku.raitisoja.com/feed.xml" rel="self" />
     <link href="https://markku.raitisoja.com" />
-    <updated>2021-05-30T10:54:06+03:00</updated>
+    <updated>2021-05-30T19:21:32+03:00</updated>
     <author>
         <name>Markku Raitisoja</name>
     </author>
     <id>https://markku.raitisoja.com</id>
 
+    <entry>
+        <title>Create 7-zip encrypted archive</title>
+        <author>
+            <name>Markku Raitisoja</name>
+        </author>
+        <link href="https://markku.raitisoja.com/create-7-zip-encrypted-archive/"/>
+        <id>https://markku.raitisoja.com/create-7-zip-encrypted-archive/</id>
+            <category term="encryption"/>
+            <category term="commandline"/>
+            <category term="Linux"/>
+
+        <updated>2021-05-30T19:03:41+03:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://markku.raitisoja.com/media/posts/8/keyboard.jpeg" alt="" />
+                    Installing 7-zip in Ubuntu sudo apt install p7zip-full This is a quick oneliner to compress and encrypt files in folder.
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://markku.raitisoja.com/media/posts/8/keyboard.jpeg" alt="" />
+                <p>Installing 7-zip in Ubuntu</p>
+<p class="msg msg--info">sudo apt install p7zip-full</p>
+<p>This is a quick oneliner to compress and encrypt files in folder. This uses symmetric AES-256 encryption. </p>
+<p class="msg msg--info"><span class="Apple-converted-space">    </span>7z a \<br><span class="Apple-converted-space">      </span>-t7z -m0=lzma2 -mx=9 -mfb=64 \<br><span class="Apple-converted-space">      </span>-md=32m -ms=on -mhe=on -p'verysecretpassword' \<br><span class="Apple-converted-space">       </span>archive.7z directoryoffiles</p>
+<p class="p2"> </p>
+<p class="p1 msg msg--success"><span style="color: var(--headings-color); font-family: var(--font-base);">You can actually leave the password after -p switch empty and the password is asked interactively. This way it's little more secure, but can't be used in scripts because it's usually run in the background. In scripts you can replace it with command substitute or write the password in the commandline, but then remember to read protect the script. </span></p>
+<p>Quick way to disable reading of the file for others than the owner of the file</p>
+<p class="msg msg--info">chmod 600 nameofthescript</p>
+<p class="p1"><span style="color: var(--headings-color); font-family: var(--font-base); font-size: 1.60181em; font-weight: var(--font-weight-bold); letter-spacing: -0.03rem;">Explanation:</span></p>
+<p class="p1">Here are the switches explained</p>
+<table class="align-center" style="border-collapse: collapse; width: 100%; border-style: solid;" border="1">
+<tbody>
+<tr>
+<td style="width: 23.2218%;">Switch</td>
+<td style="width: 76.7782%;">Meaning</td>
+</tr>
+<tr>
+<td style="width: 23.2218%;">a</td>
+<td style="width: 76.7782%;">Add (directoryoffiles to archive.7z)</td>
+</tr>
+<tr>
+<td style="width: 23.2218%;">-t7z</td>
+<td style="width: 76.7782%;">7z format</td>
+</tr>
+<tr>
+<td style="width: 23.2218%;">-m0=lzma2</td>
+<td style="width: 76.7782%;">lzma2</td>
+</tr>
+<tr>
+<td style="width: 23.2218%;">-mx=9</td>
+<td style="width: 76.7782%;">Use the '9' level of compression = the best level</td>
+</tr>
+<tr>
+<td style="width: 23.2218%;">-mfb=64</td>
+<td style="width: 76.7782%;">Use number of fast bytes for LZMA = 64</td>
+</tr>
+<tr>
+<td style="width: 23.2218%;">-md=32m</td>
+<td style="width: 76.7782%;">Use a dictionary size = 32 megabytes</td>
+</tr>
+<tr>
+<td style="width: 23.2218%;">-ms=on</td>
+<td style="width: 76.7782%;"><span class="Apple-converted-space">   </span>Solid archive = on</td>
+</tr>
+<tr>
+<td style="width: 23.2218%;">-mhe=on</td>
+<td style="width: 76.7782%;">
+<p>7z format only : Disables listing of files without a password<br>In ZIP format you can't encrypt headers, so even without the password filenames are visible. </p>
+</td>
+</tr>
+<tr>
+<td style="width: 23.2218%;">-p{Password}</td>
+<td style="width: 76.7782%;">Add a password</td>
+</tr>
+</tbody>
+</table>
+<h2 class="p1"><span class="Apple-converted-space">About AES-256 encyption. </span></h2>
+<p class="p1"><span class="Apple-converted-space">I found this article from <a href="https://scrambox.com/article/brute-force-aes/" target="_blank" rel="noopener noreferrer">scrambox</a> website and there is an explanation how the brute force times are calculated. <br>Here is the re-cap from the site how long it would take the different computers to brute force this encryption</span></p>
+<table>
+<tbody>
+<tr>
+<th>Computing power</th>
+<th>Average time to crack using exhaustive search</th>
+</tr>
+<tr>
+<th>High-end PC</th>
+<td>27,337,893,038,406,611,​194,430,009,​974,922,940,​323,611,067,​429,756,962,​487,493,203 years.<br><br>27 trillion trillion trillion trillion trillion years</td>
+</tr>
+<tr>
+<th>Fastest supercomputer</th>
+<td>27,337,893,038,​406,611,194,​430,009,974,​922,940,323,​611,067,429,​756,962,487 years.<br><br>27,337,893 trillion trillion trillion trillion years</td>
+</tr>
+<tr>
+<th>2 billion high-end PCs</th>
+<td>13,668,946,​519,203,305,​597,215,004,​987,461,470,​161,805,533,​714,878,481 years<br><br>13,689 trillion trillion trillion trillion years</td>
+</tr>
+<tr>
+<th>Age of the universe</th>
+<td>15,000,000,000 years<br><br>15 billion years</td>
+</tr>
+</tbody>
+</table>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Make journald logfiles smaller</title>
         <author>
@@ -20,7 +126,7 @@
             <category term="Sidebar"/>
             <category term="Linux"/>
 
-        <updated>2021-05-30T10:51:58+03:00</updated>
+        <updated>2021-05-30T11:12:46+03:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://markku.raitisoja.com/media/posts/7/keyboard-2.jpeg" alt="" />
@@ -48,7 +154,7 @@
             <category term="Sidebar"/>
             <category term="Linux"/>
 
-        <updated>2021-05-30T10:54:06+03:00</updated>
+        <updated>2021-05-30T18:26:35+03:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://markku.raitisoja.com/media/posts/6/keyboard.jpeg" alt="" />
@@ -60,7 +166,7 @@
                     <img src="https://markku.raitisoja.com/media/posts/6/keyboard.jpeg" alt="" />
                 <p class="p1">This command will convert all the png files (with that suffix) with longest side to be 1080 pixels with quality of 50%. New files will be renamed as "converted-&lt;OriginaFileName&gt;"</p>
 <p> </p>
-<p class="p1 msg msg--info">for file in *.png; do convert $file -resize 1080 -quality 50 converted-$file; done</p>
+<p class="msg msg--info">for file in *.png; do convert $file \ <br>-resize 1080 -quality 50 \<br>converted-$file; done</p>
 <p> </p>
             ]]>
         </content>
@@ -74,14 +180,16 @@
         <id>https://markku.raitisoja.com/friendica/</id>
             <category term="Friendica"/>
 
-        <updated>2021-05-29T23:47:17+03:00</updated>
+        <updated>2021-05-30T11:11:14+03:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://markku.raitisoja.com/media/posts/4/Friendica_Logo.png" alt="" />
                      Friendica is federated microblogging software that lives in the fediverse. Fediverse is the collection of interconnecting servers that can&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <img src="https://markku.raitisoja.com/media/posts/4/Friendica_Logo.png" alt="" />
                 
   <p>
     <a href="https://friendi.ca" target="_blank">Friendica</a> is federated microblogging software that lives in the fediverse.<br><a href="https://en.wikipedia.org/wiki/Fediverse" target="_blank">Fediverse</a> is the collection of interconnecting servers that can communicate with each other. Mostly used protocol used is ActivityPub (later AP).&nbsp;<br>With AP users can follow other users from different servers and do mostly common microblogging actions like commenting, resharing or liking.
@@ -118,15 +226,43 @@
         <id>https://markku.raitisoja.com/about/</id>
             <category term="about"/>
 
-        <updated>2021-05-29T21:18:43+03:00</updated>
+        <updated>2021-05-30T19:21:32+03:00</updated>
             <summary>
                 <![CDATA[
-                    I'm introverted (INFJ) person who likes to tinker different software on Linux. My main interests are in privacy and security.
+                     Quickly about me I'm introverted (INFJ) person who likes to tinker different software on Linux. My main interests are&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>I'm introverted (INFJ) person who likes to tinker different software on Linux.<br>My main interests are in privacy and security.<br>I have been working in IT business almost 20 years in different roles. <br>Recently I have been working as an IT infra architect, designing and implementing different platforms.</p>
+                <div class="post__toc">
+<h3>Table of Contents</h3>
+<ul>
+<li><a href="#mcetoc_1f6v18roi4u">Quickly about me</a></li>
+<li><a href="#mcetoc_1f6v0orth4i">Work</a></li>
+<li><a href="#mcetoc_1f6v0orth4j">Photographing</a></li>
+<li><a href="#mcetoc_1f6v0orth4k">Martial Arts</a></li>
+<li><a href="#mcetoc_1f6v0orth4l">Linux servers</a></li>
+</ul>
+</div>
+<h2 id="mcetoc_1f6v18roi4u">Quickly about me</h2>
+<p>I'm introverted (INFJ) person who likes to tinker different software on Linux.<br>My main interests are in privacy and security.</p>
+<h2 id="mcetoc_1f6v0orth4i">Work</h2>
+<p><br>I have been working in IT business almost 20 years in different roles. <br>Recently I have been working as an IT infra architect, designing and implementing different platforms.</p>
+<h2 id="mcetoc_1f6v0orth4j">Photographing</h2>
+<p>I try to take photographs as often as possible, but usually they don't turn up to be publishable, but I'm trying to learn more about that subject, so you can also see those.</p>
+<h2 id="mcetoc_1f6v0orth4k">Martial Arts</h2>
+<p>I used to practice eskrima, which is Philippino martial art mainly focusing on sticks, knifes and machetes. </p>
+<h2 id="mcetoc_1f6v0orth4l">Linux servers</h2>
+<p>My main hobby is administering my Linux servers, that run different kinds of software. <br>I'm hosting the following:<br><br></p>
+<ul style="list-style-type: circle;">
+<li>Friendica, microblogging server. Profile <a href="https://f.prvcy.eu/profile/make" target="_blank" rel="noopener noreferrer">here</a></li>
+<li>Misty, nomadic identity enabled social-media server. Profile <a href="https://raitisoja.com/channel/make">here</a></li>
+<li>Searx, privacy enabled metasearch engine. Link <a href="https:/searx.prvcy.eu" target="_blank" rel="noopener noreferrer">here</a></li>
+<li>Keyoxide, distributed identity proof software. My proofs are <a href="https://proofs.raitisoja.com/markku@raitisoja.com" target="_blank" rel="noopener noreferrer">here</a></li>
+<li>Modoboa email server</li>
+<li>WordPress</li>
+<li>NextCloud file sharing server</li>
+</ul>
             ]]>
         </content>
     </entry>
