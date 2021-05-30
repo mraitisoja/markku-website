@@ -3,12 +3,68 @@
     <title>Markkku&#x27;s blog</title>
     <link href="https://markku.raitisoja.com/feed.xml" rel="self" />
     <link href="https://markku.raitisoja.com" />
-    <updated>2021-05-29T22:40:23+03:00</updated>
+    <updated>2021-05-30T10:54:06+03:00</updated>
     <author>
         <name>Markku Raitisoja</name>
     </author>
     <id>https://markku.raitisoja.com</id>
 
+    <entry>
+        <title>Make journald logfiles smaller</title>
+        <author>
+            <name>Markku Raitisoja</name>
+        </author>
+        <link href="https://markku.raitisoja.com/make-journald-logfiles-smaller/"/>
+        <id>https://markku.raitisoja.com/make-journald-logfiles-smaller/</id>
+            <category term="commandline"/>
+            <category term="Sidebar"/>
+            <category term="Linux"/>
+
+        <updated>2021-05-30T10:51:58+03:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://markku.raitisoja.com/media/posts/7/keyboard-2.jpeg" alt="" />
+                    Here is the command how you can quickly vacuum your journalctl logfiles. This might be handy when test server's disk&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://markku.raitisoja.com/media/posts/7/keyboard-2.jpeg" alt="" />
+                <p>Here is the command how you can quickly vacuum your journalctl logfiles. This might be handy when test server's disk is getting full and logfiles are not needed</p>
+<p class="msg msg--warning">This will <strong>permanently</strong> delete logfiles. Please know what you are doing. </p>
+<p>This will save last 200 MB of journald logfiles</p>
+<p class="p1 msg msg--highlight ">sudo journalctl --vacuum-size=200M</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Quickly Resize, Convert &amp; Modify Images from the Linux Terminal</title>
+        <author>
+            <name>Markku Raitisoja</name>
+        </author>
+        <link href="https://markku.raitisoja.com/quickly-resize-convert-and-modify-images-from-the-linux-terminal/"/>
+        <id>https://markku.raitisoja.com/quickly-resize-convert-and-modify-images-from-the-linux-terminal/</id>
+            <category term="commandline"/>
+            <category term="Sidebar"/>
+            <category term="Linux"/>
+
+        <updated>2021-05-30T10:54:06+03:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://markku.raitisoja.com/media/posts/6/keyboard.jpeg" alt="" />
+                    This command will convert all the png files (with that suffix) with longest side to be 1080 pixels with quality&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://markku.raitisoja.com/media/posts/6/keyboard.jpeg" alt="" />
+                <p class="p1">This command will convert all the png files (with that suffix) with longest side to be 1080 pixels with quality of 50%. New files will be renamed as "converted-&lt;OriginaFileName&gt;"</p>
+<p> </p>
+<p class="p1 msg msg--info">for file in *.png; do convert $file -resize 1080 -quality 50 converted-$file; done</p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Friendica</title>
         <author>
@@ -18,17 +74,37 @@
         <id>https://markku.raitisoja.com/friendica/</id>
             <category term="Friendica"/>
 
-        <updated>2021-05-29T22:40:23+03:00</updated>
+        <updated>2021-05-29T23:47:17+03:00</updated>
             <summary>
                 <![CDATA[
-                     Friendica is federated microblogging software that lives in the fediverse. Fediverse is the collection of interconnecting servers that can communicate with each other. Mostly used protocol used is ActivityPub (later AP).&nbsp; With AP users can follow other users from different servers and do mostly&hellip;
+                     Friendica is federated microblogging software that lives in the fediverse. Fediverse is the collection of interconnecting servers that can&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 
   <p>
-    Friendica is federated microblogging software that lives in the fediverse.<br>Fediverse is the collection of interconnecting servers that can communicate with each other. Mostly used protocol used is ActivityPub (later AP).&nbsp;<br>With AP users can follow other users from different servers and do mostly common microblogging actions like commenting, resharing or liking.
+    <a href="https://friendi.ca" target="_blank">Friendica</a> is federated microblogging software that lives in the fediverse.<br><a href="https://en.wikipedia.org/wiki/Fediverse" target="_blank">Fediverse</a> is the collection of interconnecting servers that can communicate with each other. Mostly used protocol used is ActivityPub (later AP).&nbsp;<br>With AP users can follow other users from different servers and do mostly common microblogging actions like commenting, resharing or liking.
+  </p>
+
+  <p>
+    Total statistics of <a href="https://the-federation.info" target="_blank">fediverse</a><br>16 Protocols<br>69 Projects<br>9,548 Nodes<br>3,877,197 Users
+  </p>
+
+  <p>
+    This is the latest info about <a href="https://the-federation.info/friendica" target="_blank">friendica</a> according to the-federation.info website&nbsp;
+  </p>
+
+  <p>
+    299 Nodes<br>9110 Users<br>1143893 Posts<br>273808 Comments
+  </p>
+
+  <p>
+    Everybody who has the skills to setup friendica server can start to follow people from other servers. Also there is a possibility to sing up with hosted server, which has sign in enabled. That is also a good way to start exploring friendica&nbsp; as product.
+  </p>
+
+  <p>
+    
   </p>
             ]]>
         </content>
@@ -45,65 +121,12 @@
         <updated>2021-05-29T21:18:43+03:00</updated>
             <summary>
                 <![CDATA[
-                    I'm introverted (INFJ) person who likes to tinker different software on Linux. My main interests are in privacy and security. I have been working in IT business almost 20 years in different roles. Recently I have been working as an IT infra architect, designing and&hellip;
+                    I'm introverted (INFJ) person who likes to tinker different software on Linux. My main interests are in privacy and security.
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 <p>I'm introverted (INFJ) person who likes to tinker different software on Linux.<br>My main interests are in privacy and security.<br>I have been working in IT business almost 20 years in different roles. <br>Recently I have been working as an IT infra architect, designing and implementing different platforms.</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Markku Raitisoja</title>
-        <author>
-            <name>Markku Raitisoja</name>
-        </author>
-        <link href="https://markku.raitisoja.com/markku-raitisoja/"/>
-        <id>https://markku.raitisoja.com/markku-raitisoja/</id>
-
-        <updated>2021-05-29T21:17:45+03:00</updated>
-            <summary>
-                <![CDATA[
-                    Welcome to my blog 
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Welcome to my blog</p>
-<p> </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Posts</title>
-        <author>
-            <name>Markku Raitisoja</name>
-        </author>
-        <link href="https://markku.raitisoja.com/posts/"/>
-        <id>https://markku.raitisoja.com/posts/</id>
-
-        <updated>2021-05-28T08:28:28+03:00</updated>
-            <summary>
-                <![CDATA[
-                     Beginning Here is the beginning Be water my friend Bruce Lee 
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                
-    <h2 id="beginning">
-      Beginning
-    </h2>
-
-  <p>
-    Here is the beginning
-  </p>
-
-    <figure class="blockquote">
-      <blockquote>Be water my friend</blockquote>
-      <figcaption>Bruce Lee</figcaption>
-    </figure>
             ]]>
         </content>
     </entry>
