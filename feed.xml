@@ -3,7 +3,7 @@
     <title>Markkku&#x27;s blog</title>
     <link href="https://markku.raitisoja.com/feed.xml" rel="self" />
     <link href="https://markku.raitisoja.com" />
-    <updated>2021-05-31T11:18:33+03:00</updated>
+    <updated>2021-05-31T16:54:33+03:00</updated>
     <author>
         <name>Markku Raitisoja</name>
     </author>
@@ -253,7 +253,7 @@
         <id>https://markku.raitisoja.com/about/</id>
             <category term="about"/>
 
-        <updated>2021-05-30T19:21:32+03:00</updated>
+        <updated>2021-05-31T16:54:33+03:00</updated>
             <summary>
                 <![CDATA[
                      Quickly about me I'm introverted (INFJ) person who likes to tinker different software on Linux. My main interests are&hellip;
@@ -289,6 +289,7 @@
 <li>Modoboa email server</li>
 <li>WordPress</li>
 <li>NextCloud file sharing server</li>
+<li>Matrix-synapse chat server </li>
 </ul>
             ]]>
         </content>
