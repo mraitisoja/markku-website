@@ -3,12 +3,39 @@
     <title>Markkku&#x27;s blog</title>
     <link href="https://markku.raitisoja.com/feed.xml" rel="self" />
     <link href="https://markku.raitisoja.com" />
-    <updated>2021-05-31T09:21:04+03:00</updated>
+    <updated>2021-05-31T11:18:33+03:00</updated>
     <author>
         <name>Markku Raitisoja</name>
     </author>
     <id>https://markku.raitisoja.com</id>
 
+    <entry>
+        <title>Starting a new blog</title>
+        <author>
+            <name>Markku Raitisoja</name>
+        </author>
+        <link href="https://markku.raitisoja.com/starting-a-new-blog/"/>
+        <id>https://markku.raitisoja.com/starting-a-new-blog/</id>
+
+        <updated>2021-05-31T11:18:33+03:00</updated>
+            <summary>
+                <![CDATA[
+                     I'm starting this new blog where I hope to keep posting articles about various subjects, mostly it will be&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+  <p>
+    I'm starting this new blog where I hope to keep posting articles about various subjects, mostly it will be computer related.
+  </p>
+
+  <p>
+    I hope you enjoy&nbsp;
+  </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Create 7-zip encrypted archive</title>
         <author>
